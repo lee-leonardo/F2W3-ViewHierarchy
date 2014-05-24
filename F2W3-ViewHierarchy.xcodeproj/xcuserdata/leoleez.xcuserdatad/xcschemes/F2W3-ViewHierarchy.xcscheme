@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "38CF516119299EC1009D294A"
+               BuildableName = "F2W3-ViewHierarchy.app"
+               BlueprintName = "F2W3-ViewHierarchy"
+               ReferencedContainer = "container:F2W3-ViewHierarchy.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -12,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "38CF518219299EC1009D294A"
+               BuildableName = "F2W3-ViewHierarchyTests.xctest"
+               BlueprintName = "F2W3-ViewHierarchyTests"
+               ReferencedContainer = "container:F2W3-ViewHierarchy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "38CF516119299EC1009D294A"
+            BuildableName = "F2W3-ViewHierarchy.app"
+            BlueprintName = "F2W3-ViewHierarchy"
+            ReferencedContainer = "container:F2W3-ViewHierarchy.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +58,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "38CF516119299EC1009D294A"
+            BuildableName = "F2W3-ViewHierarchy.app"
+            BlueprintName = "F2W3-ViewHierarchy"
+            ReferencedContainer = "container:F2W3-ViewHierarchy.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "38CF516119299EC1009D294A"
+            BuildableName = "F2W3-ViewHierarchy.app"
+            BlueprintName = "F2W3-ViewHierarchy"
+            ReferencedContainer = "container:F2W3-ViewHierarchy.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

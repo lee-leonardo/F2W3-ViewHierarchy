@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386061DC19301EDA009C8EC8 /* CountTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 386061DB19301EDA009C8EC8 /* CountTextLabel.m */; };
 		38CF516619299EC1009D294A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CF516519299EC1009D294A /* Foundation.framework */; };
 		38CF516819299EC1009D294A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CF516719299EC1009D294A /* CoreGraphics.framework */; };
 		38CF516A19299EC1009D294A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CF516919299EC1009D294A /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		38CF518719299EC1009D294A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CF516919299EC1009D294A /* UIKit.framework */; };
 		38CF518F19299EC1009D294A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38CF518D19299EC1009D294A /* InfoPlist.strings */; };
 		38CF519119299EC1009D294A /* F2W3_ViewHierarchyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF519019299EC1009D294A /* F2W3_ViewHierarchyTests.m */; };
+		38CF519E19299F12009D294A /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF519D19299F12009D294A /* BubbleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		386061DA19301EDA009C8EC8 /* CountTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountTextLabel.h; sourceTree = "<group>"; };
+		386061DB19301EDA009C8EC8 /* CountTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountTextLabel.m; sourceTree = "<group>"; };
 		38CF516219299EC1009D294A /* F2W3-ViewHierarchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F2W3-ViewHierarchy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CF516519299EC1009D294A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		38CF516719299EC1009D294A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		38CF518C19299EC1009D294A /* F2W3-ViewHierarchyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "F2W3-ViewHierarchyTests-Info.plist"; sourceTree = "<group>"; };
 		38CF518E19299EC1009D294A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38CF519019299EC1009D294A /* F2W3_ViewHierarchyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2W3_ViewHierarchyTests.m; sourceTree = "<group>"; };
+		38CF519C19299F12009D294A /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		38CF519D19299F12009D294A /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38CB2C881930103600122D66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38CF519C19299F12009D294A /* BubbleView.h */,
+				38CF519D19299F12009D294A /* BubbleView.m */,
+				386061DA19301EDA009C8EC8 /* CountTextLabel.h */,
+				386061DB19301EDA009C8EC8 /* CountTextLabel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		38CF515919299EC1009D294A = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +131,9 @@
 			children = (
 				38CF517419299EC1009D294A /* AppDelegate.h */,
 				38CF517519299EC1009D294A /* AppDelegate.m */,
-				38CF517719299EC1009D294A /* Main.storyboard */,
-				38CF517A19299EC1009D294A /* ViewController.h */,
-				38CF517B19299EC1009D294A /* ViewController.m */,
+				38CB2C881930103600122D66 /* Model */,
+				38CF519A19299EE2009D294A /* View */,
+				38CF519B19299EF3009D294A /* Controller */,
 				38CF517D19299EC1009D294A /* Images.xcassets */,
 				38CF516C19299EC1009D294A /* Supporting Files */,
 			);
@@ -150,6 +167,23 @@
 				38CF518D19299EC1009D294A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38CF519A19299EE2009D294A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38CF517719299EC1009D294A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38CF519B19299EF3009D294A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38CF517A19299EC1009D294A /* ViewController.h */,
+				38CF517B19299EC1009D294A /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +285,8 @@
 			files = (
 				38CF517C19299EC1009D294A /* ViewController.m in Sources */,
 				38CF517619299EC1009D294A /* AppDelegate.m in Sources */,
+				386061DC19301EDA009C8EC8 /* CountTextLabel.m in Sources */,
+				38CF519E19299F12009D294A /* BubbleView.m in Sources */,
 				38CF517219299EC1009D294A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +492,7 @@
 				38CF519619299EC1009D294A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38CF519719299EC1009D294A /* Build configuration list for PBXNativeTarget "F2W3-ViewHierarchyTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +501,7 @@
 				38CF519919299EC1009D294A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
