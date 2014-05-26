@@ -10,16 +10,21 @@
 #import "UIColor+ColorChange.h"
 
 @implementation BubbleView
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
 	UIColor *color = [UIColor randomColor];
-		
+
+//	Should I place this somewhere else? I think for the purpose of this project it shouldn't matter.
+	CGFloat hue, sat, bright, alpha;
+	[color getHue:&hue saturation:&sat brightness:&bright alpha:&alpha];
+	UIColor *borderColor = [UIColor colorWithHue:hue saturation:(1-sat) brightness:(1-bright) alpha:0.8];
+
+	
     if (self) {
 		self.backgroundColor = color;
 		self.layer.borderWidth = 2.f;
-		self.layer.borderColor = color.CGColor;
+		self.layer.borderColor = borderColor.CGColor;
 		self.layer.cornerRadius = self.frame.size.width / 2.0;
 		
     }
